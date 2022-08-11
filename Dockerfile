@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
 EXPOSE 8080
-ARG JAR_FILE=build/libs/Ramprasad-spring-CI-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} Ramprasad-spring.jar
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
