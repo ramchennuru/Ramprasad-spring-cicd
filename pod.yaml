@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-webtw
+  labels:
+    role: myrole
+spec:
+  containers:
+    - name: web
+      image: ramr161189/ramprasad-spring
+      ports:
+        - name: web
+          containerPort: 80
+          protocol: TCP
