@@ -41,6 +41,8 @@ jobs:
 #      - name: Gradle Build
 #        run: gradle build
       - name: Gradle Run
+        run: gradle build
+      - name: Gradle Run
         run: gradle bootrun
       - name: docker installation
         run: docker -v
