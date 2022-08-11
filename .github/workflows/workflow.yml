@@ -54,7 +54,7 @@ jobs:
       - name: docker images
         run: docker images -a
       - name: docker tag
-        run: docker build . -t ramr161189/ramprasad-spring
+        run: docker build  -t ramr161189/ramprasad-spring .
       - name: docker push image
         run: docker push  ramr161189/ramprasad-spring
 
