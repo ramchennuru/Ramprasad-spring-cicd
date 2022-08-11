@@ -40,6 +40,8 @@ jobs:
 
 #      - name: Gradle Build
 #        run: gradle build
+      - name: Gradle install
+        run: suso apt-install gradle
       - name: Gradle Build
         run: gradle build
       - name: Gradle Run
