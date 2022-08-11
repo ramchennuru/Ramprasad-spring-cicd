@@ -40,7 +40,7 @@ jobs:
 
 #      - name: Gradle Build
 #        run: gradle build
-      - name: Gradle Run
+      - name: Gradle Build
         run: gradle build
       - name: Gradle Run
         run: gradle bootrun
