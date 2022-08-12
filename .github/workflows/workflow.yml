@@ -38,14 +38,14 @@ jobs:
 #          username: ${{ secrets.DOCKERHUB_USERNAME }}
 #          password: ${{ secrets.DOCKERHUB_PASSWORD}}
 
-#      - name: Gradle Build
-#        run: gradle build
-#      - name: Gradle Version
-#        run: gradle --version
-#      - name: Gradle Build
-#        run: gradle build
-#      - name: Gradle Run
-#        run: gradle bootrun
+      - name: Gradle Build
+        run: gradle build
+      - name: Gradle Version
+        run: gradle --version
+      - name: Gradle Build
+        run: gradle build
+      - name: Gradle Run
+        run: gradle bootrun
       - name: docker installation
         run: docker -v
       #      - name: docker login
